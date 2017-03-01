@@ -2,13 +2,33 @@ h1, h2, h3, h4, h5, h6, p, a {
   font-family: 'Open Sans', sans-serif;
 }
 
-header, main, footer {
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.one_third {
+  width: 33.3333%;
+}
+
+.two_third {
+  width: 66.6666%;
+}
+
+
+
+header, #main, footer {
   width: 100%;
+  padding: 16px;
 }
 
 
 header {
   border-bottom: 1px solid #000;
+  overflow: auto;
 }
 
 #main {
@@ -17,10 +37,10 @@ header {
 
 footer {
   border-top: 1px solid #000;
-    height: 50px;
+  height: 50px;
   margin-top: -50px;
 }
 
 .wrapper {
-  min-height: 100%;
+  min-height: calc(100% - 32px);
 }
