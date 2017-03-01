@@ -1,0 +1,26 @@
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header, main, footer {
+  width: 100%;
+}
+
+
+header {
+  border-bottom: 1px solid #000;
+}
+
+#main {
+  padding-bottom: 50px;
+}
+
+footer {
+  border-top: 1px solid #000;
+    height: 50px;
+  margin-top: -50px;
+}
+
+.wrapper {
+  min-height: 100%;
+}

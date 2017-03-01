@@ -16,6 +16,11 @@ footer, header, nav {
 	vertical-align: baseline;
 }
 
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
 /* HTML5 display-role reset for older browsers */
 
 footer, header, nav {
