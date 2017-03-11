@@ -13,19 +13,9 @@ footer, header, nav {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	vertical-align: baseline;
-}
-
-html, body {
-	height: 100%;
-	margin: 0;
 }
 
 /* HTML5 display-role reset for older browsers */
-
-footer, header, nav {
-	display: block;
-}
 
 
 ol, ul {
