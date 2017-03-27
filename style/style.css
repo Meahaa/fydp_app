@@ -55,7 +55,7 @@ header{
 
 .inner {
   width: 100%;
-  height: 483px;
+  height: 564px;
 
 }
 
@@ -81,6 +81,12 @@ footer {
 }
 
 /*Start*/
+
+#timer {
+  display: inline;
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 4px;
+}
 
 .start_copy {
   margin-top: 50px;
@@ -151,10 +157,6 @@ footer {
   text-transform: uppercase;
 }
 
-.trigger {
-  color: #fff;
-}
-
 /** LIGHTBOX MARKUP **/
 
 .lightbox {
@@ -165,7 +167,7 @@ footer {
   position: fixed;
   z-index: 999;
   width: 100%;
-  height: 100%;
+  height: 120%;
   text-align: center;
   top: 0;
   left: 0;

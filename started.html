@@ -8,7 +8,6 @@
   <link href="style/reset.css" rel="stylesheet" type="text/css" />
   <link href="style/style.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
   <div class="content">
     <header>
@@ -17,17 +16,12 @@
         <p>Humidity: 20 %</p>
       </div>
       <div class="one-third right">
-        <p>Duration: -- : -- </p>
+        <p style="display: inline">Duration:</p><div id="timer"></div>
       </div>
     </header>
-    <iframe class="inner" src="inner.html" frameborder="0"></iframe>
+    <iframe class="inner" src="inner_2.html" frameborder="0"></iframe>
   </div>
   <footer>
-    <div class="half left">
-      <a href="#img1">
-        <p class="trigger">TRIGGER</p>
-      </a>
-    </div>
     <div class="half right">
       <a href="summary.html">
       <div class="button right">
@@ -36,10 +30,32 @@
       </a>
     </div>
   </footer>
-  <!-- lightbox container hidden with CSS -->
-  <a href="#_" class="lightbox" id="img1">
-    <img src="images/lightbox.png">
-  </a>
+  
 </body>
+<script type="text/javascript">
+var seconds = 0
+var minutes = 0
+function timer(){
+  seconds += 1
+  if (seconds < 10) {
+    secondsDisp = "0" + seconds
+  }
+  else if (seconds == 60) {
+    minutes += 1
+    seconds = 0
+    secondsDisp = seconds
+  } else {
+    secondsDisp = seconds
+  }
+  if (minutes < 10) {
+    minutesDisp = "0" + minutes
+  } else {
+    minutesDisp = minutes
+  }
 
+  document.getElementById("timer").innerHTML = minutesDisp + " : " + secondsDisp
+}
+timer()
+window.setInterval(timer, 1000);
+</script>
 </html>
